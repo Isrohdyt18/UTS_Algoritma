@@ -1,5 +1,4 @@
-# Tugas-UTS
-
+# DESKRIPSI (UTS ALGORITMA)
 
 **Soal Pertama**
 **Alur Program**
@@ -16,34 +15,30 @@
 
 ```c++
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main()
-{
-    int A,B,X,Y;
-    cout << "masukan bilangan 1: ";
-    cin >> A;
-    cout << "masukan bilangan 2: ";
-    cin >> B;
+int main(){
+    int A, B, X, Y;
+
+    cout << "Masukkan Variabel X = "; cin >> A;
+    cout << "Masukkan Variabel y = "; cin >> B;
 
     X = A;
     Y = B;
-    if (X  != Y )
-            {if  ( X < Y )
-                    { X = X + A; }
+    if (X != Y){
+        if (X < Y)
+            (X = X + A);
         else
-                    { Y = Y + B; }
+            (Y = Y + B);
     }
 
 
     cout << X;
 
 
-
 }
-
 
 ```
 
@@ -52,33 +47,17 @@ int main()
 **Alur Program**
 
 1. deklarasikan variabel input N, X, T, Batas; sebagai inputnya
-2. memasukkan nilal N yaitu 2 angka terakhir NIM saya,  maka N adalah 60 
+2. memasukkan nilal N yaitu 2 angka terakhir NIM saya,  maka N adalah 30 
    dan batasnya adalah 160 dari hasil jumlahan N + 100,.
-3. masukkan variabel X, dan T, X nya adalah 20 dan kemudian T adalah 60 (dari N).
+3. masukkan variabel X, dan T, X nya adalah 20 dan kemudian T adalah 30 (dari N).
 4. dimana T kurang dari sama dengan batas, brarti tidak boleh melebihi batas
-5. kemudian menghitung ``` X = X + 10; ```,dan hasilnya 30 kemudian menghirung ``` T = T + X; ```, 
+5. kemudian menghitung ``` X = X + 10; ```,dan hasilnya 30 kemudian menghitung ``` T = T + X; ```, 
    hasilnya adalah 90.
 6. kemudian cetak variabel T
 
 **Code Program**
 
 ```c++
-
-#include<iostream>
-using namespace std;
-int main()
-
-{ int N,X,T,Batas;
-    N = 30 ;
-    Batas = N + 100;
-    X = 20;
-    T = N;
-  while( T <= Batas)
-        { T = T + X;
-          X = X + 10;
-        }
-    cout << T;
-}
 
 
 ```
