@@ -16,30 +16,34 @@
 
 ```c++
 
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main(){
-    int A, B, X, Y;
-
-    cout << "Masukkan Variabel X = "; cin >> A;
-    cout << "Masukkan Variabel y = "; cin >> B;
+int main()
+{
+    int A,B,X,Y;
+    cout << "masukan bilangan 1: ";
+    cin >> A;
+    cout << "masukan bilangan 2: ";
+    cin >> B;
 
     X = A;
     Y = B;
-    if (X != Y){
-        if (X < Y)
-            (X = X + A);
+    if (X  != Y )
+            {if  ( X < Y )
+                    { X = X + A; }
         else
-            (Y = Y + B);
+                    { Y = Y + B; }
     }
 
 
     cout << X;
 
 
+
 }
+
 
 ```
 
@@ -60,24 +64,21 @@ int main(){
 
 ```c++
 
-#include <iostream>
-
+#include<iostream>
 using namespace std;
+int main()
 
-int main(){
-    int N, X, T, Batas;
-
-    N = 60;
+{ int N,X,T,Batas;
+    N = 30 ;
     Batas = N + 100;
     X = 20;
     T = N;
-
-    while (T <= Batas) {
-            T = T + X;
-            X = X + 10;
-    }
-
+  while( T <= Batas)
+        { T = T + X;
+          X = X + 10;
+        }
     cout << T;
 }
+
 
 ```
